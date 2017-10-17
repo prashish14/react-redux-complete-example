@@ -3,7 +3,7 @@ import { withAuthentication, lazyLoad } from "../views/enhancers";
 
 const routes = [
     {
-        path: "/",
+        path: "/Home",
         component: Home,
         exact: true,
     },
@@ -20,8 +20,8 @@ const routes = [
     },
     {
         path: "/cart",
-        component: lazyLoad( ( ) => import( "../views/pages/cart" ) ),
-        exact: true,
+        component: (import( "../views/pages/cart" ) ),
+        exact: false,
     },
     {
         path: "/myaccount",
