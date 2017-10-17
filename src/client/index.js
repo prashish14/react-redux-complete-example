@@ -9,12 +9,6 @@ import configureStore from "../app/state/store";
 
 const reduxStore = configureStore( );
 
-const RootHtml = ( ) => (
-    <ReduxProvider store={ reduxStore }>
-        <Router>
-            <App />
-        </Router>
-    </ReduxProvider>
-);
+
 
 render( <RootHtml />, document.getElementById( "react-root" ) );
